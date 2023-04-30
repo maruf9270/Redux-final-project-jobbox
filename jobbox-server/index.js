@@ -42,8 +42,14 @@ async function connectToDatabase (){
             return result;
 
         })
+        // 3. sending candidate data to the backend
+        app.get('/candidates',(req,res)=>{
+            res.send("getting it worked")
+            
+        })
         
     }
+
    finally{
 
    }
